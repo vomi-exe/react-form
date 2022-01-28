@@ -1,0 +1,36 @@
+input {
+  padding: 15px;
+  margin: 10px 0 5px 0;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline: none;
+}
+label {
+  font-size: 14px;
+  color: rgb(44, 22, 22);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.formInput {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+}
+
+span {
+  font-size: 12px;
+  padding: 5px;
+  color: red;
+  font-family: sans-serif;
+  display: none;
+}
+
+input:invalid[focused="true"] {
+  border: solid 1px red;
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
+}
